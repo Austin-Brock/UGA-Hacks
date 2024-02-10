@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Flow</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="/cssFiles/styles.css"> <!-- Assuming you have a common stylesheet -->
+    <link rel="stylesheet" href="/cssFiles/cash.css"> <!-- Assuming you have a common stylesheet -->
 </head>
 
 <body>
@@ -18,4 +18,13 @@
         <a href="debtHelp.html">Debt Help</a>
     </div>
     <h1>Cash</h1>
+    <div class="container">
+        <h2>Salary Breakdown</h2>
+        <label for="yearlySalary">Yearly Salary:</label>
+        <input type="number" id="yearlySalary" placeholder="Enter your yearly salary">
+        <button onclick="calculateMonthly()">Calculate Monthly</button>
+        <p>Monthly Income: <span id="monthlyIncome">0</span></p>
+    </div>
+    
+    <script src="/javscriptFiles/cash.js"></script>
 </body>
