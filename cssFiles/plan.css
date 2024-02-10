@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.budget-tracker {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.item,
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item .description,
+.summary-item div {
+    flex: 1;
+}
+
+.item .budget,
+.item .actual,
+.item .remaining,
+.summary-item div {
+    flex: 0 0 100px;
+    text-align: right;
+}
+
+.income h2,
+.expenses h3 {
+    color: #007bff;
+}
+
+.summary-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Add custom styles for colors, borders, etc. */
+
+/* For negative remaining balance */
+.negative {
+    color: red;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}

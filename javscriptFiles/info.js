@@ -5,5 +5,5 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
     var income = document.getElementById('income').value; // Get the income value
     localStorage.setItem('annualIncome', income); // Store it in local storage
     // Redirect to spending.html upon form submission
-    window.location.href = 'spending.html';
+    window.location.href = 'home.html';
 });
