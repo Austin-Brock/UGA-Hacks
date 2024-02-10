@@ -11,4 +11,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     console.log('Password:', password);
     
     // After successful login, you can redirect the user to another page
-    // window.location.href = 'dashboard.html';
+    // window.location.href = 'dashboard.html'
+}
