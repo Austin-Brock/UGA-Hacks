@@ -33,6 +33,7 @@ label {
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    border-radius: 3px;
   }
   
   button:hover {
