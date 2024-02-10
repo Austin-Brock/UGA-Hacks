@@ -1,0 +1,13 @@
+/* Add specific styles for the info.html page */
+.container {
+    width: 400px; /* Adjust width for larger form */
+  }
+  
+  #state {
+    width: calc(100% - 22px); /* Adjust width for state dropdown */
+  }
+  
+  #income {
+    width: calc(100% - 20px); /* Adjust width for income input */
+  }
+  
