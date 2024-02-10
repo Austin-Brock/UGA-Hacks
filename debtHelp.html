@@ -12,5 +12,26 @@
         <p>Our mission is to empower you with the tools and knowledge to manage and overcome your debt. With the right resources, we believe everyone can take control of their financial future.</p>
         <p>Remember, you're not alone in this journey. Thousands have successfully navigated their way out of debt, and with determination and guidance, you can too.</p>
     </div>
+    <div class="assessment-section">
+        <h2>Debt Assessment Tool</h2>
+        <form id="debtForm">
+            <div class="form-group">
+                <label for="totalDebt">Total Debt ($):</label>
+                <input type="number" id="totalDebt" name="totalDebt" required>
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Average Interest Rate (%):</label>
+                <input type="number" step="0.01" id="interestRate" name="interestRate" required>
+            </div>
+            <div class="form-group">
+                <label for="monthlyPayment">Monthly Payment ($):</label>
+                <input type="number" id="monthlyPayment" name="monthlyPayment" required>
+            </div>
+            <button type="submit" class="submit-btn">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
 </body>
+<script src="debtHelp.js"></script>
 </html>
