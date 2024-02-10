@@ -10,4 +10,14 @@
   #income {
     width: calc(100% - 20px); /* Adjust width for income input */
   }
+
+  .state-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .state-container label {
+    margin-right: 10px;
+  }
+  
   

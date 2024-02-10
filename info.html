@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Information</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Link the common styles -->
-        <link rel="stylesheet" href="info-styles.css"> <!-- Link the specific styles for info.html -->
-      </head>
-      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
   <div class="container">
     <h2>Personal Information</h2>
@@ -15,13 +13,15 @@
       <label for="age">Age:</label>
       <input type="number" id="age" name="age" placeholder="Enter your age" required>
       
-      <label for="state">State of Residence:</label>
-      <select id="state" name="state">
-        <option value="Alabama">Alabama</option>
-        <option value="Alaska">Alaska</option>
-        <option value="Arizona">Arizona</option>
-        <!-- Add more options for other states -->
-      </select>
+      <div class="state-container">
+        <label for="state">State of Residence:</label>
+        <select id="state" name="state">
+          <option value="Alabama">Alabama</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Arizona">Arizona</option>
+          <!-- Add more options for other states -->
+        </select>
+      </div>
       
       <label for="income">Annual Income ($):</label>
       <input type="number" id="income" name="income" placeholder="Enter your annual income" required>
