@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 40px;
+    margin: 200px;
 }
 
 .calculator {
@@ -51,7 +52,7 @@
 
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: auto;
     position: fixed;
     z-index: 1;
     top: 0;
