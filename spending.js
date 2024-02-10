@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Assuming you want to calculate the distribution based on the income
   // This is just an example. You'll adjust the percentages as needed
   var data = {
-      labels: ['Rent', 'Food', 'Clothing', 'Investments', 'Other'],
+      labels: ['Housing', 'Food', 'Clothing', 'Investments', 'Other'],
       datasets: [{
-          label: 'Income Distribution',
+          label: 'Yearly Spending Distribution',
           data: [
               annualIncome * 0.4, // 40% for Rent
               annualIncome * 0.2, // 20% for Food
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
           plugins: {
               title: {
                   display: true,
-                  text: 'Income Distribution'
+                  text: 'Yearly Spending Distribution'
               }
           }
       }
