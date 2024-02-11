@@ -1,78 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pie Chart</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="/cssFiles/plan.css"> <!-- Assuming you have a common stylesheet -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Saving Goals</title>
+    <link rel="stylesheet" href="/cssFiles/plan.css">
 </head>
-
 <body>
-    <div class="sidenav">
-        <a href="home.html"><span class="material-symbols-outlined">home</span> Home</a>
-        <a href="cash.html"><span class="material-symbols-outlined">
-                currency_exchange
-            </span> Cash Flow</a>
-        <a href="plan.html"> <span class="material-symbols-outlined">
-                map
-            </span> Plan</a>
-        <a href="investment.html"><span class="material-symbols-outlined">
-                trending_up
-            </span> Investments</a>
-        <a href="debtHelp.html"><span class="material-symbols-outlined">
-                thumb_up
-            </span> Debt Help</a>
-    </div>
-    <div class="budget-tracker">
-
-        <div class="section income">
-            <h2>Income</h2>
-            <div class="item">
-                <div class="description">Paychecks</div>
-                <div class="budget">$8,400</div>
-                <div class="actual">$8,412</div>
-                <div class="remaining">$0</div>
+    <header>
+        <h1>Saving Goals</h1>
+    </header>
+    <main>
+        <section class="goal-form">
+            <h2>Add a New Goal</h2>
+            <form id="goalForm">
+                <input type="text" id="goalName" name="goalName" placeholder="Goal Name (e.g., Vacation, New Car)" required>
+                <input type="number" id="goalAmount" name="goalAmount" placeholder="Goal Amount ($)" required>
+                <button type="submit">Add Goal</button>
+            </form>
+        </section>
+        <section class="goal-list">
+            <h2>Your Goals</h2>
+            <div id="goalsContainer">
+                <!-- Goals will be displayed here -->
             </div>
-            <!-- Repeat for other income sources -->
-        </div>
-
-        <div class="section expenses">
-            <h2>Expenses</h2>
-            <div class="category">
-                <h3>Food & Dining</h3>
-                <div class="item">
-                    <div class="description">Groceries</div>
-                    <div class="budget">$500</div>
-                    <div class="actual">$471</div>
-                    <div class="remaining">$29</div>
-                </div>
-                <!-- Repeat for other expense items -->
-            </div>
-            <!-- Repeat for other expense categories -->
-        </div>
-
-        <div class="summary">
-            <div class="summary-item">
-                <div>Total Income</div>
-                <div>$8,412</div>
-            </div>
-            <div class="summary-item">
-                <div>Expenses</div>
-                <div>$5,621</div>
-            </div>
-            <div class="summary-item">
-                <div>Goals</div>
-                <div>$300</div>
-            </div>
-            <!-- Add more summary items if needed -->
-        </div>
-
-    </div>
+        </section>
+    </main>
+    <script src="/javscriptFiles/plan.js"></script>
 </body>
-
 </html>
-</body>
+

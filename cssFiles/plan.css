@@ -1,53 +1,60 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.budget-tracker {
-    max-width: 800px;
-    margin: 0 auto;
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
 
-.section {
-    margin-bottom: 20px;
+main {
+    padding: 20px;
 }
 
-.item,
-.summary-item {
+.goal-form, .goal-list {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.goal-form h2, .goal-list h2 {
+    color: #333333;
+}
+
+#goalForm {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+#goalForm input[type="text"], #goalForm input[type="number"] {
     margin-bottom: 10px;
-}
-
-.item .description,
-.summary-item div {
-    flex: 1;
-}
-
-.item .budget,
-.item .actual,
-.item .remaining,
-.summary-item div {
-    flex: 0 0 100px;
-    text-align: right;
-}
-
-.income h2,
-.expenses h3 {
-    color: #007bff;
-}
-
-.summary-item {
-    background-color: #f0f0f0;
     padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
 }
 
-/* Add custom styles for colors, borders, etc. */
-
-/* For negative remaining balance */
-.negative {
-    color: red;
+#goalForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+#goalForm button:hover {
+    background-color: #0375ee;
+}
+
+#goalsContainer {
+    margin-top: 20px;
+}
 
 .sidenav {
     height: 100%;
