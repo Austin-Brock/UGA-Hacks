@@ -14,6 +14,7 @@ header {
 
 main {
     padding: 20px;
+    margin-left: 250px; /* Added to make space for the sidenav */
 }
 
 .goal-form, .goal-list {
@@ -56,6 +57,7 @@ main {
     margin-top: 20px;
 }
 
+/* Sidebar Navigation Styles */
 .sidenav {
     height: 100%;
     width: auto;
@@ -79,3 +81,6 @@ main {
 .sidenav a:hover {
     color: #f1f1f1;
 }
+
+/* Optional: Add more professional font */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
