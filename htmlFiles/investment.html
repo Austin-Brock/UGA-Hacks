@@ -12,68 +12,90 @@
 </head>
 
 <body>
-    <div class="sidenav">
-        <a href="home.html"><span class="material-symbols-outlined">home</span> Home</a>
-        <a href="cash.html"><span class="material-symbols-outlined">
+    <div class="investment-container">
+        <div class="sidenav">
+            <a href="home.html"><span class="material-symbols-outlined">home</span> Home</a>
+            <a href="cash.html"><span class="material-symbols-outlined">
                 currency_exchange
-            </span> Cash Flow</a>
-        <a href="plan.html"> <span class="material-symbols-outlined">
+                </span> Cash Flow</a>
+            <a href="plan.html"> <span class="material-symbols-outlined">
                 map
-            </span> Plan</a>
-        <a href="investment.html"><span class="material-symbols-outlined">
-                trending_up
-            </span> Investments</a>
-        <a href="debtHelp.html"><span class="material-symbols-outlined">
-                thumb_up
-            </span> Debt Help</a>
-    </div>
-
-<div class="content">
-    <h1>HELLO</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-<section class="container">
-    <div class="calculator">
-        <div class="heading">
-            <h3>Compound Interest Calculator</h3>
-            <small>Your money growth over time using compound interest...</small>
+                </span> Plan</a>
+            <a href="investment.html"><span class="material-symbols-outlined">
+                    trending_up
+                </span> Investments</a>
+            <a href="debtHelp.html"><span class="material-symbols-outlined">
+                    thumb_up
+                </span> Debt Help</a>
         </div>
-        <form class="compound-form">
-            <div class="input-group">
-                <label for="initialamount">Initial Amount</label>
-                <input type="number" id="initialamount" />
+
+        <div class="page-content">
+        <div class="content">
+            <h1>Investments</h1>
+            <p>This page acts as a comprehensive resource, providing insights into various investment vehicles, personalized risk
+            assessments, and tailored investment recommendations. </p>
+        </div>
+
+        <div>
+            <h3>Popular investment options</h3>
+            <a href=""><span class="material-symbols-outlined">
+                trending_up
+            </span> stocks</a>
+            <a href=""><span class="material-symbols-outlined">
+                receipt_long
+            </span> bonds</a>
+            <a href=""><span class="material-symbols-outlined">
+                account_balance
+            </span> mutual fund</a>
+            <a href=""><span class="material-symbols-outlined">
+                apartment
+            </span> real estate</a>
+            <a href=""><span class="material-symbols-outlined">
+                oil_barrel
+            </span> commodities</a>
+            
+        </div>
+
+        <section class="container">
+        <div class="calculator">
+            <div class="heading">
+                <h3>Compound Interest Calculator</h3>
+                <small>Your money growth over time using compound interest...</small>
             </div>
-            <div class="input-group">
-                <label for="years">Investment Years</label>
-                <input type="number" id="years" />
-            </div>
-            <div class="input-group">
-                <label for="rates">Estimated Rates(%)</label>
-                <input type="number" id="rates" />
-            </div>
-            <div class="input-group">
-                <label for="rates">Compound Interval</label>
-                <select id="compound">
-                    <option value="1">Annualy</option>
-                    <option value="4">Quartely</option>
-                    <option value="2">Semiannualy</option>
-                    <option value="12">Monthly</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <button class="submit-btn">Calculate</button>
-            </div>
-        </form>
+            <form class="compound-form">
+                <div class="input-group">
+                    <label for="initialamount">Initial Amount</label>
+                    <input type="number" id="initialamount" />
+                </div>
+                <div class="input-group">
+                    <label for="years">Investment Years</label>
+                    <input type="number" id="years" />
+                </div>
+                <div class="input-group">
+                    <label for="rates">Estimated Rates(%)</label>
+                    <input type="number" id="rates" />
+                </div>
+                <div class="input-group">
+                    <label for="rates">Compound Interval</label>
+                    <select id="compound">
+                        <option value="1">Annualy</option>
+                        <option value="4">Quartely</option>
+                        <option value="2">Semiannualy</option>
+                        <option value="12">Monthly</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <button class="submit-btn">Calculate</button>
+                </div>
+            </form>
+        </div>
+        <div class="results">
+            <h3 id="message"></h3>
+            <canvas id="data-set"></canvas>
+        </div>
+        </section>
+        </div>
     </div>
-    <div class="results">
-        <h3 id="message"></h3>
-        <canvas id="data-set"></canvas>
-    </div>
-</section>
 </body>
 <script src="/javscriptFiles/investment.js"></script>
 </html>

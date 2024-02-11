@@ -5,11 +5,26 @@
     font-family: Arial, sans-serif;
 }
 
-.container {
+.investment-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 200px;
+    margin: 250px;
+    margin-top: 25px;
+    margin-right: auto;
+}
+
+.content h1{
+    margin-top: 25px;
+    margin-left: 44%;
+}
+
+.content p {
+    text-align: center;
+    margin: 300px;
+    margin-top: 50px;
+    margin-left: 310px;
+    margin-bottom: 50px;
 }
 
 .calculator {
