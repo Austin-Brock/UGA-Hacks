@@ -46,6 +46,22 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+/* Added styles for the .submit-btn class to ensure it appears blue */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
 .sidenav {
   height: 100%;
   width: auto;
