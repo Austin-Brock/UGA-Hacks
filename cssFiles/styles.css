@@ -103,5 +103,26 @@ input[type="submit"]:hover {
     background-color: #0056b3; /* Darker shade on hover for better interaction feedback */
   }
 
+  .welcome-message h1 {
+    text-align: center;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .welcome-message p {
+    text-align: center;
+    color: #666; /* Adjust color as needed */
+    margin-bottom: 20px; /* Adds some space below the paragraph */
+  }
+  
+  /* Optional: Adjust the font size for smaller screens */
+  @media (max-width: 600px) {
+    .welcome-message h1 {
+      font-size: 24px; /* Smaller font size on small screens */
+    }
+    .welcome-message p {
+      font-size: 16px; /* Smaller font size for the paragraph on small screens */
+    }
+  }
+  
 /* Optional: Add more professional font */
 @import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
